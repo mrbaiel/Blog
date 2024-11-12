@@ -1,0 +1,86 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Main content */
+main {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Blog post title */
+h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #111;
+}
+
+h2 {
+    font-size: 24px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: #111;
+}
+
+a {
+    color: #00abff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #00FFCC;
+}
+
+/* Date styling */
+p.date {
+    color: #888;
+    font-style: italic;
+    font-size: 14px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #111;
+    color: white;
+    font-size: 14px;
+}
+
+footer p {
+    margin: 0;
+}
+/* Header */
+/* Header */
+header {
+    background-color: #e0e0e0; /* Более тёмный, но всё ещё светлый цвет для шапки */
+    padding: 20px;
+    text-align: center;
+}
+
+header nav .logo {
+    font-size: 24px;
+    color: #333333; /* Цвет текста, как у заголовков блогов */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav .logo:hover {
+    color: #555555; /* Более тёмный оттенок при наведении */
+}
