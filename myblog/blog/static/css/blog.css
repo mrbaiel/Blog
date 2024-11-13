@@ -84,3 +84,47 @@ header nav .logo {
 header nav .logo:hover {
     color: #555555; /* Более тёмный оттенок при наведении */
 }
+body {
+    margin: 0;
+    padding: 0;
+    font-family: helvetica, sans-serif;
+}
+
+a {
+    color: #00abff;
+    text-decoration: none;
+}
+
+h1, h2 {
+    font-weight: normal;
+    margin: 30px 0 0;
+}
+
+.post-title {
+    font-weight: normal;
+    font-size: 2.5em;
+    color: #333; /* Темный цвет для заголовка */
+    border-bottom: 2px solid #00abff; /* Линия под заголовком */
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+p.date {
+    color: #888; /* Светло-серый для даты */
+    font-size: 0.9em;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.post-body {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #444; /* Чуть темнее для текста */
+}
+
+/* Для контейнера страницы */
+.post-detail-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
