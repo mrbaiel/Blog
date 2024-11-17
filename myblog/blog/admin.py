@@ -18,4 +18,4 @@ class PostAdmin(admin.ModelAdmin):
 class CommentsAdmin(admin.ModelAdmin):
     list_display = ['name', 'post', 'created', 'active']
     list_filter = ['created', 'updated', 'active']
-    search_fields = ['name', 'email', 'body']
+    search_fields = ['name', 'body']
