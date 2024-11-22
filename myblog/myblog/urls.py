@@ -21,5 +21,8 @@ from django.urls import path
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path('blog/', include('blog.urls', namespace='blog')) # Пространство имен должно быть определено в blog/urls.py]
+    path('', include('blog.urls', namespace='blog')),
+    path('accounts/', include('accounts.urls')),
+    path('accounts/', include('django.contrib.auth.urls')),# Пространство имен должно быть определено в blog/urls.py]
+
 ]

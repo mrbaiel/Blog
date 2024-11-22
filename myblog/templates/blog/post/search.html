@@ -1,0 +1,24 @@
+{% extends "blog/base.html" %}
+
+{% block title %}Искать{% endblock %}
+
+{% block body %} {% if query %}
+    <h1>Результаты для запроса: "{{ query }}"</h1>
+    <ul>
+        {% for post in results %}
+            <li>
+                <a href="{{ post.get_absolute_url }}">{{ post.title }}</a>
+                <p>{{ post.body|truncatewords:20 }}</p>
+            </li>
+        {% empty %}
+            <li>Ничего не найдено.</li>
+        {% endfor %}
+    </ul>
+{% else %}
+    <h1>Поиск</h1>
+    <form method="get">
+        {{ form.as_p }}
+        <button type="submit">Искать</button>
+    </form>
+{% endif %}
+ {% endblock %}

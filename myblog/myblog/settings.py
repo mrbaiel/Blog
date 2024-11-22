@@ -12,7 +12,7 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 
 from pathlib import Path
 from decouple import config
-from django.conf.global_settings import EMAIL_BACKEND, EMAIL_HOST_PASSWORD, EMAIL_USE_SSL
+from django.conf.global_settings import EMAIL_BACKEND, EMAIL_HOST_PASSWORD, EMAIL_USE_SSL, LOGIN_REDIRECT_URL
 from django.core.validators import integer_validator
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -42,6 +42,8 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
 
     "blog.apps.BlogConfig",
+    "django.contrib.postgres",
+    "accounts.apps.AccountsConfig"
 ]
 
 MIDDLEWARE = [
@@ -145,3 +147,5 @@ EMAIL_HOST_PASSWORD = config('EMAIL_HOST_PASSWORD')
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_USE_SSL = False
+
+LOGIN_REDIRECT_URL = '/'

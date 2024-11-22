@@ -1,5 +1,7 @@
+from re import search
+
 from django.urls import path
-from .views import post_list, post_detail, post_share, post_comment
+from .views import post_list, post_detail, post_share, post_comment, post_search
 
 app_name = 'blog'
 
@@ -13,4 +15,7 @@ urlpatterns = [
     path('<int:post_id>/comment/',
          post_comment,
          name='post_comment'),
+    path('search/',
+         post_search,
+         name='post_search'),
     ]

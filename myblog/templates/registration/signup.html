@@ -1,0 +1,17 @@
+{% extends 'blog/base.html' %}
+{% block title %}
+  signup
+{% endblock %}
+
+{% block body %}
+  <h2>
+    Вход
+  </h2>
+<form method="post">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <p>
+    <input type="submit" value="Sign Up">
+  </p>
+</form>
+{% endblock %}
